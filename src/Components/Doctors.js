@@ -41,7 +41,7 @@ const Doctors = () => {
 
             axios
 
-                .get('http://localhost:5001/doctors')
+                .get('https://backend-ct3s.onrender.com/doctors')
 
                 .then(
 
@@ -70,7 +70,7 @@ const Doctors = () => {
 
                 .post(
 
-'http://localhost:5001/doctors/add', newDoctor)
+'https://backend-ct3s.onrender.com/doctors/add', newDoctor)
 
                 .then(
 
@@ -121,7 +121,7 @@ const Doctors = () => {
 
                 .post(
 
-`http://localhost:5001/doctors/update/${id}`, selectedDoctor)
+`https://backend-ct3s.onrender.com/doctors/update/${id}`, selectedDoctor)
 
                 .then(response => {
 
@@ -165,7 +165,7 @@ const Doctors = () => {
 
         axios.delete(
 
-`http://localhost:5001/doctors/delete/${id}`)
+`https://backend-ct3s.onrender.com/doctors/delete/${id}`)
 
             .then(response => {
 

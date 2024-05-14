@@ -24,7 +24,7 @@ const Patients = () => {
 
         () => {
 
-            axios.get('http://localhost:5001/patients')
+            axios.get('https://backend-ct3s.onrender.com/patients')
 
                 .then(response => setPatients(response.data))
 
@@ -45,7 +45,7 @@ const Patients = () => {
 
             axios.post(
 
-'http://localhost:5001/patients/add', newPatient)
+'https://backend-ct3s.onrender.com/patients/add', newPatient)
 
                 .then(response => {
 
@@ -73,7 +73,7 @@ const Patients = () => {
 
             axios.post(
 
-`http://localhost:5001/patients/update/${id}`, selectedPatient)
+`https://backend-ct3s.onrender.com/patients/update/${id}`, selectedPatient)
 
                 .then(response => {
 
@@ -121,7 +121,7 @@ const Patients = () => {
 
             axios.delete(
 
-`http://localhost:5001/patients/delete/${id}`)
+`https://backend-ct3s.onrender.com/patients/delete/${id}`)
 
                 .then(response => {
 

@@ -39,7 +39,7 @@ const Appointments = () => {
 
             .get(
 
-'http://localhost:5001/appointments')
+'https://backend-ct3s.onrender.com/appointments')
 
             .then(
 
@@ -69,7 +69,7 @@ const Appointments = () => {
 
                 .post(
 
-'http://localhost:5001/appointments/add', newAppointment)
+'https://backend-ct3s.onrender.com/appointments/add', newAppointment)
 
                 .then(response => {
 
@@ -112,7 +112,7 @@ const Appointments = () => {
 
                 .post(
 
-`http://localhost:5001/appointments/update/${id}`, selectedAppointment)
+`https://backend-ct3s.onrender.com/appointments/update/${id}`, selectedAppointment)
 
                 .then(response => {
 
@@ -163,7 +163,7 @@ const Appointments = () => {
 
                 .delete(
 
-`http://localhost:5001/appointments/delete/${id}`)
+`https://backend-ct3s.onrender.com/appointments/delete/${id}`)
 
                 .then(response => {
 
